@@ -20,6 +20,6 @@ const deploy: DeployFunction = async ({
   log('----------------------------------------------------');
 };
 
-deploy.tags = ['all', 'nftMarketplace'];
+deploy.tags = ['all', 'basicNft', 'nftMarketplace'];
 
 export default deploy;
