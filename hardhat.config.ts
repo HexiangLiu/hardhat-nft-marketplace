@@ -20,6 +20,11 @@ const config: HardhatUserConfig = {
       accounts: [process.env.SEPOLIA_PRIVATE_KEY!],
       chainId: 11155111,
     },
+    mainnet: {
+      url: process.env.MAINNET_RPC_URL,
+      accounts: [process.env.MAINNET_PRIVATE_KEY!],
+      chainId: 1,
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
