@@ -5,9 +5,12 @@ import 'hardhat-deploy';
 import 'hardhat-deploy-ethers';
 import 'solidity-coverage';
 import 'dotenv/config';
+import 'hardhat-gas-reporter';
 
 const config: HardhatUserConfig = {
-  solidity: '0.8.19',
+  solidity: {
+    compilers: [{ version: '0.8.19' }, { version: '0.8.20' }],
+  },
   networks: {
     localhost: {
       chainId: 31337,
